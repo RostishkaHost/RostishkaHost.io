@@ -1,45 +1,262 @@
-﻿body{
-	border: 1px black solid;
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body, html{
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #f6f6f6;
+}
+
+a{
+	color: #47d147;
+	text-decoration: none;
+	transition: all.4s ease;
+}
+
+a:hover {
+	color: #00b33c;
+	text-decoration: none;
+	transition: all.5s ease;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	float: left;
+}
+
+header{
+	float: left;
+	background-color: #333300;
+	width: 99.4%;
+	padding: 0.3%;
+	border-bottom: 7px solid #1a1a00;
+}
+
+header>div#logo>a>img{
+	width: 200px;
+	height: auto;
+	float: left;
+	margin-left: 10%;
+}
+
+span{
+	font-size: 5em;
+	font-family: 'Suez One', serif;
+	color: white;
+	float: right; 
+	width: 67%
+}
+
+#about {
+	font-size: 2em;
+	float: left;
+	text-align: center;
+	width: 40%;
+	margin-top: 2%;
+	margin-left: 9%;
+}
+
+#about>a {
+	margin-left: 3%;
+}
+
+#about>a:hover {
+	color:   #00802b;
+	border-bottom: 1px solid #00b33c;
+}
+
+#wrapper {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	margin: 0;
-}	
-
-.content-wrap{
-	display: flex;
-	flex-grow: 1;
 }
 
-nav{
-	background-color: yellow;
-	width: 200px;
+#content {
+	flex:1 0 auto;
+}
+ 
+ #photo>a>img {
+	width: 15%;
+	height: auto;
+	margin-left: 10.2%;
+	float: left;
+	margin-top:2%;
+	border-radius: 5%;
+}
+
+#introduction {
+	width: 61%;
+	margin-top: 2%;
+	margin-right: 12%;
+	height: 275px;
+	float: right;
+	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+	border: 1px solid silver;
+	border-radius: 15px;
+}
+
+#introduction>h1 {
 	text-align: center;
 }
 
-.navv, .asidee{
-	border: 1px black solid;
-	width: 100px;
-	background-color: white;
+#introduction>p {
+	font-size: 20px;
+	text-indent: 1em;
+	padding: 10px;
 }
 
-section{
-	display: flex;
-	flex-direction: column;
-	flex-grow: 1;
+#partmain {
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
 }
 
-header, footer {
-	background-color: blue;
-	height: 75px;
+#partmain #blocks {
+	float: left;
+	width: 80%;
+	margin-left: 10%;
+}
+
+#partmain #vushnya {
+	font-family: 'Pangolin', cursive;
+}
+
+#partmain #blocks article {
+	height: 450px;
+	float: left;
+	width: 31.33%;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	border-radius: 15px;
+	background-color: #fafafa;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	min-height: 400px;
+}
+
+#partmain #blocks article img {
+	width: 100%;
+	height: 230px;
+	border-radius: 5px 5px 0px 0px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid silver;
+}
+
+#partmain #blocks article h1 {
+	width: 90%;
+	margin-left: 18%;
+	font-weight: normal;
+	font-size: 1.7em;
+	color: #4a4a4a;
+}
+
+#partmain #blocks article p {
+	width: 80%;
+	margin-left: 7%;
+	font-size: 18px;
+	text-indent: 1em;
+}
+
+#partmain #blocks article a {
+	padding: 10px 5px;
+	background-color: #47d147;
+	margin-left: 10%;
+	border-radius: 10px;
+	color: #fff;
+	float: left;
+	margin-top: 10px;
+}
+
+#partmain #blocks article a:hover {
+	background-color: #00b33c;
+}
+
+footer {
+	float: left;
+	background-color: #333300;
+	width: 98%;
+	padding: 1%;
+	border-top: 7px solid #1a1a00;
+	height: 300px;
+}
+
+#site_name {
+	margin-right: 8%;
+	color: #f4f4f4;
+	float: right;
+	width: 27%;
+	height: 30%;
+	font-size: 1.7em;
+}
+
+.div #site_name>p {
+	font-size: 3em;
+ width: 100%;
+ font-size: 19px;
+ padding-top: 3px;
+ float: left;
+ font-family: 'Roboto Slab', serif;
+}
+
+#footer_menu{
+	font-size: 1.6em;
+
+}
+
+#footer_menu>a {
+	margin-left: 1.5%;
+	color: #f4f4f4;
+}
+
+#footer_menu>a:hover, #rights>a:hover {
+	border-bottom: 1px solid silver;
+	color: #aeaeae;
+}
+
+#rights {
+	float: left;
+	margin-left: 7%;
+	font-size: 1.1em;
+	margin-top: 36px;
+}
+
+#rights>a {
+	color: #f4f4f4;
+}
+
+#social {
+	float: right;
+	width: 10%;
+	margin-right: 45%;
+}
+
+#social>a {
+	border-radius: 25%;
+	background-color: #00b33c;
+	margin-left: 10%;
+	width: 40px;
+	height:40px;
+	float: right;
 	color: white;
 	text-align: center;
+	line-height: 40px;
+	font-size: 1.7em;
 }
 
-article{
-	background-color: white;
-	height: 300px;
-	flex-grow: 1;
-	text-align: center;
-	border: 1px black solid;
+#social>a:hover {
+	background-color:  #00802b; 
 }
+
+
+
+
+
