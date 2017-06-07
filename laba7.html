@@ -1,12 +1,91 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-	<title>sdgsdgsf</title>
-</head>
-<body>
-<p>
-	<a href="index.html"></a>
-</p>
-afbkadfbkldflnkbsf
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Лабараторна</title>
+		<script language="javascript" src="javascript/laba7jscr.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/laba7st.css">
+	</head>
+	<body class="Back">
+		<div id="str1">
+			<p id="student">
+				Студент <span class="str1">Дяків Рослислав</span>
+				Група <span class="str1"> КН-11</span>
+			</p>
+		</div>
+		
+		<div>
+			<p class="DataPosition">Вхідні дані </p>
+			<!--Поля вводу даних для обчислення площі-->
+			<form onsubmit="return false;" oninput="squarew()">
+				<div id="table">
+					<table border="2" width="20%" height="10"> 
+						<tr><td>
+								<input type="text" id="LengthA" placeholder="Довжина">
+							</td>
+						</tr>
+						<tr><td>
+								<input type="text" id="WidthB" placeholder="Ширина">
+							</td>
+						</tr>
+						<tr><td height="20">	
+								<input type="text" id="1" placeholder="Периметр">
+							</td>
+						</tr>
+						
+						<tr><td height="20">
+								<input type="text" id="2" placeholder="Площа">
+							</td>
+						</tr>
+				
+						<tr><td height="20">
+								<output type="text" id="result" placeholder="Результат">
+							</td>
+						</tr>
+					</table>
+				</div>
+			</form>
+			<br>
+			
+			<p class="ResultPosition">Результат </p>
+			<!--Випадаючі списки-->
+			<form>
+				<div id="listOne">
+					<p>Колір</p>
+					<select id="ColorSelect" class="listOne">
+						<option value="#8A2BE2">Fuchsia</option>
+						<option value="#A52A2A">Gainsboro</option>
+						<option value="#DEB887">GhostWhite</option>
+						<option value="#5F9EA0">Gold</option>
+						<option value="#7FFF00">GoldenRod</option>
+					</select>
+				</div>
+				
+				<div id="listToo">
+					<p>Шрифт</p>
+					<select id="FontSelect" class="listToo">
+						<option value="12px">12 px</option>
+						<option value="15px">15 px</option>
+						<option value="23px">23 px</option>
+						<option value="26px">26 px</option>
+						<option value="28px">28 px</option>
+					</select>
+				</div>
+				
+				<!--Кнопки зміни розміру шрифту та кольору-->
+				<div id="bottomOne">
+					<input type="button" onclick="getOptionColor()" value="ОК">
+				</div>
+					
+				<div id="bottomToo">	
+					<input type="button" onclick="getOptionFont()" value="ОК">
+				</div>
+			</form>				
+		</div>
+		<!--Картинки: square та формули-->
+		<div>
+			<img src="images/square.png" alt="Square" width="15%" class="imageOne" /> 
+			<img src="images/formula.png" alt="Formula" width="15%" class="imageToo"/> 
+		</div>
+	</body>
 </html>
