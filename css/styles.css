@@ -277,4 +277,20 @@ footer {
 	line-height: 40px;
 }
 
+#pic{
+	width: 50%;
+	height: 550px;
+	border-radius: 5px 5px 5px 5px;
+	margin-bottom: 10px;
+}
+
+#tex{
+	margin-left: 40px;
+	padding: 40px;
+	padding-top: 250px;
+	font-size: 25px;
+	font-family: 'Suez One', serif;
+	line-height: 40px;
+}
+
 
